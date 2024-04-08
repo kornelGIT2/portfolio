@@ -26,7 +26,7 @@ function AboutMe() {
         </div>
 
         <div className="max-w-2xl flex flex-col lg:p-6  z-[1] ">
-          <h1 className="flex md:justify-start justify-center mb-2  font-bold tracking-widest text-xl text-sky-500 cursor-default">
+          <h1 className="flex md:justify-start justify-center md:mb-2 -mb-6  font-bold tracking-widest text-xl text-sky-500 cursor-default">
             About Me
           </h1>
           <p className="md:text-sm text-slate-600 dark:text-slate-400 lg:leading-normal font-semibold md:text-start text-xs">
@@ -88,7 +88,7 @@ function AboutMe() {
               </span>
             </div>
             {showSkills ? (
-              <div className="grid lg:grid-cols-5 grid-cols-4 gap-4 lg:absolute top-10 p-4">
+              <div className="grid lg:grid-cols-5 grid-cols-5 gap-4 lg:absolute top-10 md:p-4">
                 {skills.map((skill, i) => {
                   return (
                     <Skill key={i} keyProp={i} icon={skill.icon}>

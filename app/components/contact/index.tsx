@@ -42,7 +42,7 @@ function Contact() {
       </div>
 
       <form
-        className="space-y-4 w-full"
+        className="space-y-4 md:w-full"
         action={async (formData) => {
           const email = await sendEmail(formData);
 

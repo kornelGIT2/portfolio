@@ -35,7 +35,7 @@ function Project({
           {description}
         </p>
 
-        <ul className="flex flex-wrap gap-2 mt-8 ">
+        <ul className="flex flex-wrap md:gap-2 md:mt-8 mt-1">
           {techStack.map((tag: { name: string; icon: string }) => {
             return (
               <li

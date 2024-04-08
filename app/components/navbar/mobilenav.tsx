@@ -3,8 +3,8 @@ import { Link } from "react-scroll";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import { links } from "@/const";
 import { useState } from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
+import ThemeSwitch from "../shared/theme-swtich";
 
 const MobileNav = () => {
   const [active, setActive] = useState("");
@@ -19,7 +19,7 @@ const MobileNav = () => {
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          className={`inline-flex items-center p-2 w-10 h-10 justify-center 
+          className={`inline-flex items-center fixed top-8 left-4 p-2 w-10 h-10 justify-center 
             text-sm text-black rounded-xl md:hidden dark:hover:bg-black 
             focus:outline-none focus:ring-2  dark:text-whit dark:text-white
               dark:focus:ring-slate-300 `}
@@ -43,12 +43,15 @@ const MobileNav = () => {
         className="dark:bg-slate-950 border-r-2 z-[100] dark:border-zinc-800 bg-slate-100 border-slate-800"
       >
         <div className="p-3">
-          <Image
-            src="/assets/icons/github.svg"
-            height={30}
-            width={30}
-            alt="github"
-          />
+          <div className="flex space-x-4 justify-start items-center">
+            <ThemeSwitch />
+            <Image
+              src="/assets/icons/github.svg"
+              height={30}
+              width={30}
+              alt="github"
+            />
+          </div>
           <hr className="border-b border-zinc-300 dark:border-zinc-700 mt-6"></hr>
           <ul className="flex flex-col space-y-10 mt-10">
             {links.map((link) => {
