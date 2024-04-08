@@ -18,8 +18,8 @@ function Hero() {
         <motion.div className="md:hidden z-10 bg-gradient-to-t dark:from-slate-950   dark:to-sky-500 rounded-full from-slate-50  to-blue-400">
           <Image
             src="/nobg.png"
-            height={300}
-            width={300}
+            height={150}
+            width={150}
             className=" rounded-full"
             alt="Obrazek"
           />
@@ -37,13 +37,13 @@ function Hero() {
                 exit={{ opacity: 0 }}
                 className="bg-gradient-to-r cursor-default from-blue-600 via-sky-600 to-blue-600 dark:from-blue-500 dark:via-sky-300 dark:to-blue-500 inline-block bg-clip-text text-transparent "
               >
-                <span className="font-bold lg:text-6xl text-5xl md:text-5xl tracking-wide leading-[3.25rem]  md:leading-[3.75rem] lg:leading-[4.0625rem] xl:text-6xl xl:leading-[4.5rem] ">
+                <span className="font-bold lg:text-6xl text-4xl md:text-5xl tracking-wide leading-[3.25rem]  md:leading-[3.75rem] lg:leading-[4.0625rem] xl:text-6xl xl:leading-[4.5rem] ">
                   {" "}
-                  Hello, I&apos;m m Kornel Użarowski
+                  Hello, I&apos;m Kornel Użarowski
                 </span>
               </motion.div>
             </span>{" "}
-            <span className="font-bold text-black dark:text-white lg:text-6xl text-3xl md:text-5xl tracking-wide leading-[3.25rem]  md:leading-[3.75rem] lg:leading-[4.0625rem] xl:text-6xl xl:leading-[4.5rem]">
+            <span className="font-bold text-black dark:text-white lg:text-6xl text-2xl md:text-5xl tracking-wide leading-[3.25rem]  md:leading-[3.75rem] lg:leading-[4.0625rem] xl:text-6xl xl:leading-[4.5rem]">
               <Typewriter
                 words={[
                   "Dedicated & Passionate",
@@ -60,7 +60,7 @@ function Hero() {
               />
             </span>
           </div>
-          <div className=" flex md:justify-start flex-col md:flex-row justify-center items-center md:space-x-10 space-y-4 md:space-y-0 mt-4">
+          <div className=" flex md:justify-start flex-col md:flex-row justify-center items-center md:space-x-10 space-y-4 md:space-y-0 lg:mt-4">
             <a
               href="/CV/KornelUzarowski_CV.pdf"
               download
@@ -81,7 +81,7 @@ function Hero() {
               <img src="arrow.svg" alt="arrow" className="h-5 dark:invert" />
             </Link>
           </div>
-          <div className="flex mt-8 md:justify-start justify-center md:space-x-8 space-x-5 items-center ">
+          <div className="flex lg:mt-8  md:justify-start justify-center md:space-x-8 space-x-5 items-center ">
             <span className="md:mr-6 border-r-2 pr-6 border-black dark:border-white tracking-wide text-sm cursor-default font-semibold dark:text-white text-black">
               Tech Stack
             </span>

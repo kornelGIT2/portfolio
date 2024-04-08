@@ -35,7 +35,7 @@ function ThemeSwitch() {
       className="fixed flex 
     items-center justify-center bottom-5 right-5
      dark:bg-slate-800 bg-slate-100 p-3 rounded-full bg-opacity-90 shadow-xl
-     hover:scale-[1.1] active:scale-105 transition-all z-[1]
+     hover:scale-[1.1] active:scale-105 transition-all z-10
      "
       onClick={toggleMode}
     >
