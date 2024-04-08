@@ -60,10 +60,10 @@ function Project({
       </div>
 
       <img
-        className="hidden sm:block absolute top-5 -right-20 lg:w-[28.25rem] w-[26rem] rounded-t-xl shadow-2xl
-          group-even:right-[initial] group-even:-left-24
-          group-hover:scale-[1.05]
-  
+        className="hidden sm:block absolute top-5 -right-20 lg:w-[28.25rem] w-[28rem] rounded-t-xl shadow-2xl
+          group-even:right-[initial] group-even:-left-24 h-[20rem] object-cover
+          group-hover:scale-[1.1]
+          
           group-hover:-translate-x-4
           group-hover:translate-y-2
           group-hover:-rotate-2

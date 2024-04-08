@@ -36,7 +36,7 @@ export const projects = [
   {
     title: "AIograph",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin asdwwwwwwwwwwwwqawqewqewqe",
+      "AIograph is clound-based platform that leverages AI technologies to provide a range of services and capabilities. Featuring robust authentication and authorization solution, image restoration, background and object removal, generative fill and more.",
     sourceCode: "https://github.com/kornelGIT2/aIograph",
     techStack: [
       skills[1],
@@ -47,12 +47,12 @@ export const projects = [
       { name: "Cloudinary", icon: "assets/icons/cloudinary-2.svg" },
       { name: "MongoDB", icon: "assets/icons/mongodb.svg" },
     ],
-    imageUrl: "assets/icons/pexel_tmp.jpg",
+    imageUrl: "aiograph_light.png",
   },
   {
     title: "Finance Tracker",
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 y",
+      "The Finance Tracker App is a comprehensive and responsive financial management tool designed to empower individuals to take control of their finances.",
     sourceCode: "https://github.com/kornelGIT2/Finance-Tracker",
     techStack: [
       skills[1],
@@ -62,6 +62,6 @@ export const projects = [
       skills[12],
       skills[14],
     ],
-    imageUrl: "assets/icons/image_tmp.jpg",
+    imageUrl: "smartwally.png",
   },
 ];

@@ -43,7 +43,7 @@ function Hero() {
                 </span>
               </motion.div>
             </span>{" "}
-            <span className="font-bold text-black dark:text-white lg:text-6xl text-2xl md:text-5xl tracking-wide leading-[3.25rem]  md:leading-[3.75rem] lg:leading-[4.0625rem] xl:text-6xl xl:leading-[4.5rem]">
+            <span className="font-bold text-black dark:text-white  text-2xl tracking-wide leading-[3.25rem]  md:leading-[3.75rem] lg:leading-[4.0625rem] xl:text-4xl xl:leading-[4.5rem]">
               <Typewriter
                 words={[
                   "Dedicated & Passionate",
@@ -65,7 +65,7 @@ function Hero() {
               href="/CV/KornelUzarowski_CV.pdf"
               download
               className={
-                "p-3 cursor-pointer text-white transition-all bg-gradient-to-r shadow-lg dark:from-sky-500 dark:to-blue-600 from-blue-400 to-blue-600 rounded-xl font-semibold flex gap-2 justify-center dark:hover:to-sky-500 hover:to-blue-400"
+                "p-3 cursor-pointer transition-all bg-gradient-to-r shadow-lg dark:from-sky-500 dark:to-blue-600 from-blue-400 to-blue-600 rounded-xl font-semibold flex gap-2 justify-center dark:hover:to-sky-500 hover:to-blue-400"
               }
             >
               Download CV
