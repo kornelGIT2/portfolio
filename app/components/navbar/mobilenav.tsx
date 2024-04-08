@@ -60,11 +60,7 @@ const MobileNav = () => {
                     spy={true}
                     to={link.path}
                     onSetActive={handleSetActive}
-                    className={` ${
-                      link.path === active
-                        ? "dark:text-sky-500 text-black dark:hover:text-slate-200 hover:slate-700"
-                        : "dark:text-slate-300 text-slate-600 test dark:hover:text-slate-200 hover:slate-900"
-                    } capitalize cursor-pointer  font-semibold relative`}
+                    className={`text-black dark:text-white  capitalize cursor-pointer  font-semibold relative`}
                   >
                     {link.name}
                   </Link>
