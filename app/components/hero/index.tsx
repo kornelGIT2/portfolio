@@ -15,12 +15,12 @@ function Hero() {
     w-[40.75rem]  left-[-70rem]"
       ></div>
       <div className="md:grid grid-cols-12 flex flex-col items-center justify-center gap-10 ">
-        <motion.div className="md:hidden z-10 bg-gradient-to-t dark:from-slate-950   dark:to-sky-500 rounded-full from-slate-50  to-blue-400">
+        <motion.div className="md:hidden z-10 bg-gradient-to-t dark:from-slate-950 shadow-lg   dark:to-sky-500 rounded-full from-slate-50  to-blue-400">
           <Image
             src="/nobg.png"
             height={150}
             width={150}
-            className=" rounded-full"
+            className=" rounded-full shadow-lg "
             alt="Obrazek"
           />
         </motion.div>

@@ -43,8 +43,13 @@ const MobileNav = () => {
         className="dark:bg-slate-950 border-r-2 z-[100] dark:border-zinc-800 bg-slate-100 border-slate-800"
       >
         <div className="p-3">
-          <h2 className="text-black mt-6 font-bold text-xl">Lets go</h2>
-          <hr className="border-b border-zinc-300 mt-6"></hr>
+          <Image
+            src="/assets/icons/github.svg"
+            height={30}
+            width={30}
+            alt="github"
+          />
+          <hr className="border-b border-zinc-300 dark:border-zinc-700 mt-6"></hr>
           <ul className="flex flex-col space-y-10 mt-10">
             {links.map((link) => {
               return (
@@ -67,12 +72,6 @@ const MobileNav = () => {
               );
             })}
           </ul>
-          <Image
-            src="/assets/icons/github.svg"
-            height={30}
-            width={30}
-            alt="github"
-          />
         </div>
       </SheetContent>
     </Sheet>
