@@ -98,7 +98,7 @@ function Contact() {
             <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>
           ) : (
             <>
-              Submit{" "}
+              <span className="text-white">Submit </span>
               <img
                 src="submit-4.svg"
                 alt="submission"

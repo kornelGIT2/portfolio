@@ -65,7 +65,7 @@ function Hero() {
               href="/CV/KornelUzarowski_CV.pdf"
               download
               className={
-                "p-3 cursor-pointer transition-all bg-gradient-to-r shadow-lg dark:from-sky-500 dark:to-blue-600 from-blue-400 to-blue-600 rounded-xl font-semibold flex gap-2 justify-center dark:hover:to-sky-500 hover:to-blue-400"
+                "p-3 cursor-pointer text-white transition-all bg-gradient-to-r shadow-lg dark:from-sky-500 dark:to-blue-600 from-blue-400 to-blue-600 rounded-xl font-semibold flex gap-2 justify-center dark:hover:to-sky-500 hover:to-blue-400"
               }
             >
               Download CV

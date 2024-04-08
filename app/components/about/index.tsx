@@ -25,12 +25,12 @@ function AboutMe() {
           ></div>
         </div>
 
-        <div className="max-w-2xl flex flex-col p-6  z-[1] ">
+        <div className="max-w-2xl flex flex-col lg:p-6  z-[1] ">
           <h1 className="flex md:justify-start justify-center mb-2  font-bold tracking-widest text-xl text-sky-500 cursor-default">
             About Me
           </h1>
           <p className="md:text-sm text-slate-600 dark:text-slate-400 lg:leading-normal font-semibold md:text-start text-xs">
-            <span className="font-bold text-xl dark:text-slate-200 text-slate-700">
+            <span className="font-bold text-xl dark:text-slate-200 text-slate-700 hidden md:block">
               A passionate and experienced frontend developer from Poland.
             </span>{" "}
             <br></br>

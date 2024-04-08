@@ -1,6 +1,4 @@
-"use client";
 import Image from "next/image";
-import { easeInOut, motion } from "framer-motion";
 
 type ProjectProps = {
   title: string;
@@ -20,7 +18,7 @@ function Project({
   keyProp,
 }: ProjectProps) {
   return (
-    <motion.div
+    <div
       className="bg-gradient-to-b dark:from-slate-900 dark:to-slate-950 from-slate-300 to-slate-100 group max-w-[55rem]  
       overflow-hidden rounded-xl relative dark:hover:to-slate-950 dark:hover:from-slate-800 hover:to-slate-100 hover:from-slate-200 transition sm:pr-8 shadow-lg"
     >
@@ -78,7 +76,7 @@ function Project({
         src={imageUrl}
         alt="app image"
       />
-    </motion.div>
+    </div>
   );
 }
 
