@@ -39,7 +39,7 @@ function Hero() {
               >
                 <span className="font-bold lg:text-6xl text-5xl md:text-5xl tracking-wide leading-[3.25rem]  md:leading-[3.75rem] lg:leading-[4.0625rem] xl:text-6xl xl:leading-[4.5rem] ">
                   {" "}
-                  Hello, I'm Kornel Użarowski
+                  Hello, I&apos;m m Kornel Użarowski
                 </span>
               </motion.div>
             </span>{" "}
