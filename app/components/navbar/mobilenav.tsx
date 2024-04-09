@@ -45,12 +45,14 @@ const MobileNav = () => {
         <div className="p-3">
           <div className="flex space-x-4 justify-start items-center">
             <ThemeSwitch />
-            <Image
-              src="/assets/icons/github.svg"
-              height={30}
-              width={30}
-              alt="github"
-            />
+            <a href="https://github.com/kornelGIT2">
+              <Image
+                src="/assets/icons/github.svg"
+                height={30}
+                width={30}
+                alt="github"
+              />
+            </a>
           </div>
           <hr className="border-b border-zinc-300 dark:border-zinc-700 mt-6"></hr>
           <ul className="flex flex-col space-y-10 mt-10">

@@ -32,7 +32,7 @@ function ThemeSwitch() {
 
   return (
     <button
-      className="md:fixed md:flex 
+      className="md:fixed md:flex
     items-center justify-center md:bottom-5 md:right-5 
      dark:bg-slate-800 bg-slate-100 p-3 rounded-full bg-opacity-90 shadow-xl
      hover:scale-[1.1] active:scale-105 transition-all z-10

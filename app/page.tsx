@@ -9,7 +9,10 @@ import ThemeSwitch from "./components/shared/theme-swtich";
 export default function Home() {
   return (
     <main className="flex flex-col justify-center text-center items-center dark:bg-slate-950 bg-slate-50">
-      <ThemeSwitch />
+      <div className="hidden md:flex">
+        <ThemeSwitch />
+      </div>
+
       <Navbar />
       <Hero />
       <AboutMe />
