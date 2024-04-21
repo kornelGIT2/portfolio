@@ -16,7 +16,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="snap-center h-screen flex items-center justify-center flex-col relative w-[400px] sm:min-w-[500px] md:min-w-[650px] space-y-10"
+      className="snap-center h-screen flex items-center justify-center flex-col w-full relative space-y-10 mx-auto"
     >
       <div className="space-y-4">
         <h4 className="dark:text-slate-400 font-medium text-slate-500 text-sm">
@@ -42,7 +42,7 @@ function Contact() {
       </div>
 
       <form
-        className="space-y-4 md:w-full"
+        className="space-y-4 w-full mx-auto max-w-[700px] pl-4 pr-4"
         action={async (formData) => {
           const email = await sendEmail(formData);
 
@@ -108,6 +108,7 @@ function Contact() {
           )}
         </Button>
       </form>
+      <Footer />
     </section>
   );
 }

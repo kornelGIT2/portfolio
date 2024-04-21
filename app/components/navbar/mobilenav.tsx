@@ -27,8 +27,9 @@ const MobileNav = () => {
           aria-expanded="false"
         >
           <span className="sr-only">Open main menu</span>
+
           <svg
-            className="w-5 h-5"
+            className="w-5 h-5 "
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -42,37 +43,51 @@ const MobileNav = () => {
         side={"left"}
         className="dark:bg-slate-950 border-r-2 z-[100] dark:border-zinc-800 bg-slate-100 border-slate-800"
       >
-        <div className="p-3">
-          <div className="flex space-x-4 justify-start items-center">
-            <ThemeSwitch />
-            <a href="https://github.com/kornelGIT2">
-              <Image
-                src="/assets/icons/github.svg"
-                height={30}
-                width={30}
-                alt="github"
-              />
-            </a>
+        <div className="p-3 h-full flex justify-between flex-col">
+          <div>
+            <div className="flex space-x-4 justify-start items-center">
+              <a href="https://github.com/kornelGIT2">
+                <Image
+                  src="/github3.svg"
+                  height={30}
+                  width={30}
+                  alt="github"
+                  className="dark:invert opacity-70"
+                />
+              </a>
+              <a href="#">
+                <Image
+                  src="/linkedin.svg"
+                  height={30}
+                  width={30}
+                  alt="github"
+                  className="dark:invert opacity-70"
+                />
+              </a>
+            </div>
+            <hr className="border-b border-zinc-300 dark:border-zinc-700 mt-6"></hr>
+            <ul className="flex flex-col space-y-10 mt-10">
+              {links.map((link) => {
+                return (
+                  <li key={link.name}>
+                    <Link
+                      key={link.name}
+                      duration={500}
+                      spy={true}
+                      to={link.path}
+                      onSetActive={handleSetActive}
+                      className={`text-black dark:text-white  capitalize cursor-pointer  font-semibold relative`}
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
-          <hr className="border-b border-zinc-300 dark:border-zinc-700 mt-6"></hr>
-          <ul className="flex flex-col space-y-10 mt-10">
-            {links.map((link) => {
-              return (
-                <li key={link.name}>
-                  <Link
-                    key={link.name}
-                    duration={500}
-                    spy={true}
-                    to={link.path}
-                    onSetActive={handleSetActive}
-                    className={`text-black dark:text-white  capitalize cursor-pointer  font-semibold relative`}
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
+          <div className="">
+            <ThemeSwitch />
+          </div>
         </div>
       </SheetContent>
     </Sheet>

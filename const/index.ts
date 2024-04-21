@@ -34,9 +34,23 @@ export const skills = [
 
 export const projects = [
   {
-    title: "AIograph",
+    title: "Car Rental",
     description:
-      "AIograph is clound-based platform that leverages AI technologies to provide a range of services and capabilities. Featuring robust authentication and authorization solution, image restoration, background and object removal, generative fill and more.",
+      "I have developed and deployed a custom car rental template from scratch, allowing users to browse available vehicles and make reservations.",
+    sourceCode: "https://github.com/kornelGIT2/car-rental",
+    techStack: [
+      skills[1],
+      skills[2],
+      skills[3],
+      skills[6],
+      { name: "Framer Motion", icon: "" },
+    ],
+    imageUrl: "project3.png",
+  },
+  {
+    title: "SaaS AI Platform",
+    description:
+      "I have built and deployed cloud-based platform using Cloudinary technologies to provide a range of services and capabilities in terms of image processing and enhancement.",
     sourceCode: "https://github.com/kornelGIT2/aIograph",
     techStack: [
       skills[1],
@@ -52,7 +66,7 @@ export const projects = [
   {
     title: "Finance Tracker",
     description:
-      "The Finance Tracker App is a comprehensive and responsive financial management tool designed to empower individuals to take control of their finances.",
+      "I have created a finance tracker applicatyion that allows you to manage your expenses, incomes and analizing spending habits through graphs.",
     sourceCode: "https://github.com/kornelGIT2/Finance-Tracker",
     techStack: [
       skills[1],

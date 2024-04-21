@@ -19,30 +19,28 @@ function Project({
 }: ProjectProps) {
   return (
     <div
-      className="bg-gradient-to-b dark:from-slate-900 dark:to-slate-950 from-slate-300 to-slate-100 group max-w-[55rem]  
-      overflow-hidden rounded-xl relative dark:hover:to-slate-950 dark:hover:from-slate-800 hover:to-slate-100 hover:from-slate-200 transition sm:pr-8 shadow-lg"
+      className=" from-slate-300 to-slate-100 group max-w-[80rem] max-h-[25rem] w-full h-full -z-[0] 
+      overflow-hidden rounded-xl relative dark:hover:to-slate-950 dark:hover:from-slate-800 hover:to-slate-100 hover:from-slate-200 transition sm:pr-8  "
     >
-      <div className="py-4 sm:pb-7 sm:px-5 sm:pt-10 sm:max-w-[50%] flex flex-col h-full justify-center items-center text-center sm:group-even:ml-[26rem] ">
+      <div className="py-4 md:space-y-8  space-y-1 md:pb-7 sm:px-5 md:pt-10 lg:max-w-[50%]  flex flex-col h-full justify-center lg:group-even:items-end lg:group-odd:items-start lg:group-even:text-end lg:group-odd:text-start items-center lg:group-even:ml-[40rem]">
         <a
           href={sourceCode}
-          className="text-2xl font-semibold dark:text-white text-slate-800 "
+          className="sm:text-2xl text-lg font-semibold dark:text-white text-slate-800"
         >
           {title}
-          <span className="block max-w-0 group-hover:max-w-full transition-all  duration-500 h-0.5 bg-gradient-to-r from-blue-500 to-sky-400"></span>
+          <span className="block max-w-0 lg:group-hover:max-w-full  transition-all  duration-500 h-0.5 bg-gradient-to-r from-blue-500 to-sky-400"></span>
         </a>
-
-        <p className="mt-2 leading-relaxed dark:text-slate-400 text-slate-500 font-medium p-2 sm:p-0 cursor-default">
+        <p className="mt-2 text-sm md:text-lg leading-relaxed dark:text-slate-400 text-slate-500 font-medium md:p-2 sm:p-0 cursor-default ">
           {description}
         </p>
-
-        <ul className="flex flex-wrap md:gap-2 md:mt-8 mt-1">
+        <ul className="flex flex-wrap items-center justify-center gap-2 md:mt-8 mt-1 ">
           {techStack.map((tag: { name: string; icon: string }) => {
             return (
               <li
                 key={tag.name}
-                className="px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full bg-black/7 flex  items-center justify-center "
+                className="px-3  text-[0.7rem] bg-slate-300 dark:bg-slate-700 uppercase tracking-wider  rounded-full  flex  items-center justify-center p-2"
               >
-                <Image
+                {/* <Image
                   src={tag.icon}
                   alt="icon"
                   height={28}
@@ -52,16 +50,42 @@ function Project({
                       ? "dark:invert"
                       : ""
                   }`}
-                />
+                /> */}
+                <span className="dark:text-slate-300 font-medium text-slate-700 ">
+                  {tag.name}
+                </span>
               </li>
             );
           })}
         </ul>
+
+        <div className="flex space-x-4 ">
+          <a href={sourceCode}>
+            <Image
+              src="/github3.svg"
+              height={30}
+              width={30}
+              alt="github"
+              className="dark:invert opacity-40 hover:opacity-50"
+            />
+          </a>
+          {title === "Car Rental" ? (
+            <a href="https://car-rental-six-xi.vercel.app/">
+              <Image
+                src="/external_link.svg"
+                height={30}
+                width={30}
+                alt="github"
+                className="dark:invert opacity-40 hover:opacity-50"
+              />
+            </a>
+          ) : null}
+        </div>
       </div>
 
       <img
-        className="hidden sm:block absolute top-5 -right-20 lg:w-[28.25rem] w-[28rem] rounded-t-xl shadow-2xl
-          group-even:right-[initial] group-even:-left-24 h-[20rem] object-cover
+        className="hidden lg:block absolute top-5 group-odd:-right-20 h-full lg:max-w-[30rem] max-w-[34rem] w-full rounded-t-xl shadow-lg
+          group-even:right-[initial] group-even:-left-0  object-cover 
           group-hover:scale-[1.1]
           
           group-hover:-translate-x-4
