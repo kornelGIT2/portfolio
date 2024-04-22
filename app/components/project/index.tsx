@@ -9,7 +9,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="snap-center flex items-center justify-center flex-col space-y-10 h-screen"
+      className="snap-center flex items-center justify-center flex-col space-y-10 h-screen overflow-hidden"
     >
       <div className="hidden w-full md:flex flex-row justify-center md:justify-start relative items-center cursor-default ">
         <SectionHeading>My Recent Projects</SectionHeading>

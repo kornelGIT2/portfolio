@@ -22,7 +22,7 @@ function Project({
       className=" from-slate-300 to-slate-100 group max-w-[80rem] max-h-[25rem] w-full h-full -z-[0] 
       overflow-hidden rounded-xl relative dark:hover:to-slate-950 dark:hover:from-slate-800 hover:to-slate-100 hover:from-slate-200 transition sm:pr-8  "
     >
-      <div className="py-4 md:space-y-8  space-y-4 md:pb-7 sm:px-5 md:pt-10 lg:max-w-[50%]  flex flex-col h-full justify-center lg:group-even:items-end lg:group-odd:items-start lg:group-even:text-end lg:group-odd:text-start items-center lg:group-even:ml-[40rem]">
+      <div className="md:py-4 md:space-y-8 md:pb-7 sm:px-5 md:pt-10 lg:max-w-[50%]  flex flex-col h-full justify-center lg:group-even:items-end lg:group-odd:items-start lg:group-even:text-end lg:group-odd:text-start items-center lg:group-even:ml-[40rem]">
         <a
           href={sourceCode}
           className="sm:text-2xl text-lg font-semibold dark:text-white text-slate-800"
@@ -33,7 +33,7 @@ function Project({
         <p className="mt-2 text-sm md:text-lg leading-relaxed dark:text-slate-400 text-slate-500 font-medium md:p-2 sm:p-0 cursor-default ">
           {description}
         </p>
-        <ul className="flex flex-wrap items-center justify-center gap-2 md:mt-8 mt-1 ">
+        <ul className="flex flex-wrap items-center justify-center gap-2 md:mt-8 mt-2">
           {techStack.map((tag: { name: string; icon: string }) => {
             return (
               <li
@@ -59,7 +59,7 @@ function Project({
           })}
         </ul>
 
-        <div className="md:flex space-x-4 hidden">
+        <div className="md:flex space-x-4 hidden ">
           <a href={sourceCode}>
             <Image
               src="/github3.svg"
