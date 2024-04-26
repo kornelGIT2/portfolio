@@ -66,7 +66,7 @@ export const projects = [
   {
     title: "Finance Tracker",
     description:
-      "I have created a finance tracker applicatyion that allows you to manage your expenses, incomes and analizing spending habits through graphs.",
+      "I have created a finance tracker application that allows you to manage your expenses, incomes and analizing spending habits through graphs.",
     sourceCode: "https://github.com/kornelGIT2/Finance-Tracker",
     techStack: [
       skills[1],
