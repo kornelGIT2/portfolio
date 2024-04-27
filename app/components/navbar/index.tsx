@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-scroll";
 import MobileNav from "./mobilenav";
-import Image from "next/image";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -15,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-center items-center z-[100]">
+    <nav className="flex justify-center items-center z-[100] ">
       <motion.div
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -27,8 +26,8 @@ const Navbar = () => {
           <MobileNav />
         </div>
 
-        <div className="hidden md:flex justify-center">
-          <ul className="flex flex-col space-x-10 md:flex-row mt-2">
+        <div className="hidden md:flex justify-center bg-slate-50 dark:bg-slate-950 p-3 max-w-[500px] mx-auto items-center rounded-3xl">
+          <ul className="flex flex-col space-x-10 md:flex-row m-2">
             {links.map((link) => {
               return (
                 <li key={link.name}>
@@ -42,7 +41,7 @@ const Navbar = () => {
                       link.path === active
                         ? "dark:text-white text-slate-800  hover:text-slate-950 "
                         : "dark:text-slate-300 text-slate-500  dark:hover:text-slate-100 hover:text-slate-950"
-                    } capitalize cursor-pointer  p-3 pr-4 pl-4  font-bold relative`}
+                    } capitalize cursor-pointer p-3 pr-3 pl-3 z-10 font-bold relative`}
                   >
                     {link.path === active && (
                       <motion.span
@@ -52,7 +51,7 @@ const Navbar = () => {
                           stiffness: 400,
                           damping: 40,
                         }}
-                        className="dark:bg-slate-800 shadow-md bg-slate-100 bg-opacity-50 dark:bg-opacity-90 absolute inset-0 -z-10 rounded-full"
+                        className="dark:bg-slate-800 shadow-md bg-slate-100 absolute inset-0 -z-10 rounded-full"
                       ></motion.span>
                     )}
                     {link.name}

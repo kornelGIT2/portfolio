@@ -3,6 +3,7 @@ import { skills } from "@/const";
 import Skill from "../skills/skill";
 import { useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 function AboutMe() {
   const [showSkills, setShowSkills] = useState(true);
@@ -11,7 +12,7 @@ function AboutMe() {
   return (
     <section
       id="about"
-      className="snap-center flex flex-col items-center justify-center p-4 h-screen mb-40  min-h-[1000px]"
+      className="snap-center flex flex-col items-center justify-center p-4 h-screen "
     >
       <div className="flex lg:flex-row flex-col items-center justify-center gap-10 ">
         <div className="flex justify-center relative ">
@@ -20,7 +21,7 @@ function AboutMe() {
             alt="image"
             height={300}
             width={300}
-            className="rounded-xl shadow-lg mb-2 dark:bg-slate-950 bg-slate-200 object-cover lg:w-[400px] lg:h-[370px] w-[200px] h-[200px] z-[1] hidden lg:block "
+            className="rounded-xl shadow-lg mb-2 dark:bg-slate-950 bg-slate-200 object-cover lg:w-[400px] lg:h-[370px] w-[200px] h-[200px] z-[1]  lg:block "
           />
           <div
             className="bg-gradient-to-b z-[0] hidden lg:block  from-blue-500 to-blue-700 dark:from-sky-500 dark:to-blue-600 absolute top-0 -right-32 left-0  inset-y-16 opacity-40 mx-auto  inset-x-0  lg:h-[350px] rounded-full blur-3xl
