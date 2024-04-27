@@ -28,13 +28,13 @@ function Hero() {
                 exit={{ opacity: 0 }}
                 className="bg-gradient-to-r cursor-default from-blue-500 via-sky-500 to-blue-500 dark:from-blue-500 dark:via-sky-300 dark:to-blue-500 inline-block bg-clip-text text-transparent "
               >
-                <span className="font-bold lg:text-6xl xl:text-7xl 2xl:text-8xl text-4xl md:text-5xl tracking-wide leading-[3.25rem]  md:leading-[3.75rem] lg:leading-[4.0625rem]  xl:leading-[4.5rem] bg-gradient-to-r dark:from-sky-400 from-blue-500 via-sky-500 to-sky-600 text-transparent bg-clip-text bg-300% animate-gradient">
+                <span className="font-bold lg:text-6xl xl:text-7xl 2xl:text-8xl text-4xl md:text-5xl tracking-wide leading-[3.25rem]  md:leading-[3.75rem] lg:leading-[4.0625rem]  xl:leading-[4.5rem] bg-gradient-to-r dark:from-sky-400 from-blue-400 via-sky-500 to-sky-600 text-transparent bg-clip-text bg-300% animate-gradient">
                   {" "}
                   Hello, I&apos;m Kornel Użarowski
                 </span>
               </motion.div>
             </span>{" "}
-            <span className="font-bold text-black dark:text-white opacity-80 text-2xl tracking-wide leading-[3.25rem]  md:leading-[3.75rem] lg:leading-[4.0625rem] xl:text-4xl xl:leading-[4.5rem]">
+            <span className="font-bold text-black dark:text-white dark:opacity-90 opacity-80 text-2xl tracking-wide leading-[3.25rem]  md:leading-[3.75rem] lg:leading-[4.0625rem] xl:text-4xl xl:leading-[4.5rem]">
               <Typewriter
                 words={[
                   "Dedicated & Passionate",

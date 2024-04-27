@@ -58,13 +58,7 @@ const Navbar = () => {
                     key={link.name}
                     duration={500}
                     spy={true}
-                    offset={
-                      link.name === "contact"
-                        ? 0
-                        : link.name === "about"
-                        ? -500
-                        : -300
-                    }
+                    offset={link.name === "contact" ? 0 : -200}
                     to={link.path}
                     onSetActive={handleSetActive}
                     className={` ${

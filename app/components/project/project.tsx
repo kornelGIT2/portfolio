@@ -109,7 +109,7 @@ function Project({
       />
 
       {keyProp !== 2 && (
-        <hr className="border-b border-slate-200 opacity-70 w-full mt-6"></hr>
+        <hr className="border-b border-slate-200 dark:border-slate-700 opacity-70 w-full mt-6"></hr>
       )}
     </div>
   );
