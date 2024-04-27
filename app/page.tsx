@@ -9,7 +9,7 @@ import Links from "./components/links";
 
 export default function Home() {
   return (
-    <main className="flex flex-col justify-center text-center items-center dark:bg-slate-950 bg-slate-50">
+    <main className="flex flex-col justify-center text-center w-full items-center dark:bg-slate-950 bg-slate-50">
       <div className="hidden md:flex">
         <ThemeSwitch />
       </div>

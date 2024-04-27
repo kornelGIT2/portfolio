@@ -11,7 +11,7 @@ function AboutMe() {
   return (
     <section
       id="about"
-      className="snap-center flex flex-col items-center justify-center p-4 h-screen "
+      className="snap-center flex flex-col items-center justify-center p-4 h-screen mb-40  min-h-[1000px]"
     >
       <div className="flex lg:flex-row flex-col items-center justify-center gap-10 ">
         <div className="flex justify-center relative ">
@@ -59,7 +59,7 @@ function AboutMe() {
             work is always at the forefront of innovation.
           </p>
 
-          <div className="flex flex-col lg:flex-row space-y-4 mt-6 justify-center text-black dark:text-white font-semibold tracking-wide relative">
+          <div className="flex flex-col lg:flex-row space-y-4 mt-6 justify-start text-black dark:text-white font-semibold tracking-wide relative">
             <div className="flex lg:gap-12 md:mb-0 mb-4">
               <span
                 className="group hover:cursor-pointer mx-auto sm:m-auto tracking-wider"
@@ -68,7 +68,7 @@ function AboutMe() {
                   setShowEducation(false);
                 }}
               >
-                Skills
+                My Skills
                 <span
                   className={`block ${
                     showSkills ? "max-w-[100%]" : "max-w-0"
@@ -92,7 +92,7 @@ function AboutMe() {
               </span>
             </div>
             {showSkills ? (
-              <div className="grid lg:grid-cols-5 grid-cols-5 gap-4 lg:absolute top-10 md:p-4">
+              <div className="grid lg:grid-cols-5 grid-cols-5 gap-4 lg:absolute top-10 ">
                 {skills.map((skill, i) => {
                   return (
                     <Skill key={i} keyProp={i} icon={skill.icon}>
@@ -102,7 +102,7 @@ function AboutMe() {
                 })}
               </div>
             ) : (
-              <div className="lg:absolute lg:top-10 flex flex-col gap-4 justify-center items-center">
+              <div className="lg:absolute lg:top-10 flex flex-col gap-4 justify-start items-start">
                 <p>Nicolaus Copernicus University </p>
                 <p>Bachelor of Science in Computer Science</p>
               </div>

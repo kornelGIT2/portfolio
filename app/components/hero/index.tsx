@@ -8,11 +8,11 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="snap-center flex items-center justify-center w-full p-4 h-screen "
+      className="snap-center flex items-center justify-center w-full p-4 h-screen"
     >
       <div
         className="bg-gradient-to-b z-[0] from-blue-400 to-blue-500 dark:from-sky-500 dark:to-blue-600 absolute  rotate-45 inset-y- opacity-20 mx-auto  inset-x-0 right-20 h-[10.25rem]  rounded-full blur-3xl
-    w-[40.75rem]  left-[-10rem] md:left-[-20rem]"
+     left-[-5rem] md:left-[-20rem] md:w-[40rem]"
       ></div>
       <div className=" flex flex-col items-center justify-center gap-10 ">
         <div className="flex flex-col  gap-6 z-[1] col-span-7 ">
@@ -56,7 +56,7 @@ function Hero() {
               href="/CV/KornelUzarowski_CV.pdf"
               download
               className={
-                "p-3 cursor-pointer transition-all bg-gradient-to-r shadow-lg dark:from-sky-500 dark:to-blue-600 from-blue-400 to-blue-600 rounded-xl font-semibold flex gap-2 justify-center dark:hover:to-sky-500 hover:to-blue-400"
+                "p-3 cursor-pointer text-white transition-all bg-gradient-to-r shadow-lg dark:from-sky-500 dark:to-blue-600 from-blue-400 to-blue-600 rounded-xl font-semibold flex gap-2 justify-center dark:hover:to-sky-500 hover:to-blue-400"
               }
             >
               Download CV
