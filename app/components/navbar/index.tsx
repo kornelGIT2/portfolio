@@ -1,17 +1,34 @@
 "use client";
 import { links } from "../../../const";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import MobileNav from "./mobilenav";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [open, setOpen] = useState(false);
+  const [header, setHeader] = useState(false);
 
   const handleSetActive = (to: string) => {
     setActive(to);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 40) {
+        setHeader(true);
+      } else {
+        setHeader(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [header]);
 
   return (
     <nav className="flex justify-center items-center z-[100] ">
@@ -26,7 +43,13 @@ const Navbar = () => {
           <MobileNav />
         </div>
 
-        <div className="hidden md:flex justify-center bg-slate-50 dark:bg-slate-950 p-3 max-w-[500px] mx-auto items-center rounded-3xl">
+        <div
+          className={`hidden md:flex justify-center bg-slate-50 dark:bg-slate-950 p-3 max-w-[500px] mx-auto items-center rounded-3xl ${
+            header
+              ? "shadow-xl transition-all delay-10 bg-opacity-95 dark:bg-opacity-80"
+              : ""
+          }`}
+        >
           <ul className="flex flex-col space-x-10 md:flex-row m-2">
             {links.map((link) => {
               return (
@@ -35,6 +58,13 @@ const Navbar = () => {
                     key={link.name}
                     duration={500}
                     spy={true}
+                    offset={
+                      link.name === "contact"
+                        ? 0
+                        : link.name === "about"
+                        ? -500
+                        : -300
+                    }
                     to={link.path}
                     onSetActive={handleSetActive}
                     className={` ${

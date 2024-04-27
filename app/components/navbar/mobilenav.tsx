@@ -20,8 +20,8 @@ const MobileNav = () => {
           data-collapse-toggle="navbar-default"
           type="button"
           className={`inline-flex items-center fixed top-8 left-4 p-2 w-10 h-10 justify-center 
-            text-sm text-black rounded-xl md:hidden dark:hover:bg-black 
-            focus:outline-none focus:ring-2  dark:text-whit dark:text-white
+            text-sm text-black rounded-xl md:hidden dark:hover:bg-black rouned-3xl
+            focus:outline-none focus:ring-2 bg-slate-50 bg-opacity-90 dark:bg-slate-950  dark:text-whit dark:text-white
               dark:focus:ring-slate-300 `}
           aria-controls="navbar-default"
           aria-expanded="false"

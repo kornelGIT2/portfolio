@@ -12,7 +12,7 @@ function AboutMe() {
   return (
     <section
       id="about"
-      className="snap-center flex flex-col items-center justify-center p-4 h-screen "
+      className="flex flex-col items-center  p-4 relative min-h-[1200px]"
     >
       <div className="flex lg:flex-row flex-col items-center justify-center gap-10 ">
         <div className="flex justify-center relative ">
@@ -30,28 +30,25 @@ function AboutMe() {
         </div>
 
         <div className="max-w-2xl flex flex-col lg:p-6  z-[1] ">
-          <h1 className="flex md:justify-start justify-center md:mb-3 mb-2  font-black tracking-widest text-xl text-black dark:text-white cursor-default">
+          <h1 className="flex md:justify-start justify-center md:mb-3 mb-2  font-bold tracking-widest text-xl text-black dark:text-white cursor-default">
             About Me
           </h1>
-          <p className="md:text-lg text-slate-600 dark:text-slate-400 lg:leading-normal font-medium md:text-start text-xs">
+          <p className="md:text-lg text-slate-600 dark:text-slate-400 lg:leading-normal font-medium md:text-start text-sm">
             My journey into the world of web development began during my
             university years, where I discovered my love for building dynamic
             and interactive web applications. It was during my third year at
-            university that I first delved into the world of{" "}
-            <span className="font-bold bg-gradient-to-r cursor-default text-sky-500">
-              React
-            </span>
-            , and from that moment on, I was{" "}
+            university that I first delved into the world of React, and from
+            that moment on, I was{" "}
             <span className=" font-bold bg-gradient-to-r from-sky-400 via-sky-300 to-sky-500 text-transparent bg-clip-text bg-300% animate-gradient">
               hooked
             </span>
             . With over two years of commercial experience working with React
-            and TypeScript, I’ve had the opportunity to tackle a wide range of
+            and TypeScript, I have had the opportunity to tackle a wide range of
             projects, from building robust user interfaces to optimizing
-            performance and scalability. I thrive on the challenge of solving
-            complex problems and enjoy the collaborative process of{" "}
-            <span className="font-bold bg-gradient-to-r cursor-default text-sky-500">
-              bringing ideas to life.
+            performance and scalability.{" "}
+            <span className="font-bold">
+              I thrive on the challenge of solving complex problems and enjoy
+              the collaborative process of bringing ideas to life.
             </span>{" "}
             Beyond my technical skills, I bring a strong work ethic, a keen eye
             for detail, and a genuine passion for creating exceptional user
@@ -93,7 +90,7 @@ function AboutMe() {
               </span>
             </div>
             {showSkills ? (
-              <div className="grid lg:grid-cols-5 grid-cols-5 gap-4 lg:absolute top-10 ">
+              <div className="grid lg:grid-cols-5 grid-cols-4 gap-4 lg:absolute top-10">
                 {skills.map((skill, i) => {
                   return (
                     <Skill key={i} keyProp={i} icon={skill.icon}>
@@ -103,7 +100,7 @@ function AboutMe() {
                 })}
               </div>
             ) : (
-              <div className="lg:absolute lg:top-10 flex flex-col gap-4 justify-start items-start">
+              <div className="lg:absolute lg:top-10 flex flex-col gap-4 justify-start md:items-start">
                 <p>Nicolaus Copernicus University </p>
                 <p>Bachelor of Science in Computer Science</p>
               </div>

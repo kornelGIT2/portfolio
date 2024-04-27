@@ -18,14 +18,6 @@ export default function Home() {
 
       <Navbar />
       <Hero />
-      <div className="hidden h-[300px] md:flex flex-row justify-center md:justify-start relative items-center cursor-default ">
-        <motion.div
-          whileInView={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: -500 }}
-          transition={{ duration: 1.5 }}
-          className="after:block dark:after:bg-zinc-500  after:opacity-90 after:bg-slate-300 md:after:w-[2px] after:h-[240px] after:mt-auto ml-6"
-        ></motion.div>
-      </div>
       <AboutMe />
       <Projects />
       <Contact />

@@ -9,15 +9,15 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="snap-center flex items-center justify-center flex-col space-y-10 h-screen overflow-hidden p-6"
+      className="snap-center flex items-center justify-center flex-col space-y-10 overflow-hidden p-4"
     >
-      <div className="hidden w-full md:flex flex-row justify-center md:justify-start relative items-center cursor-default ">
+      <div className=" w-full flex flex-row justify-start relative items-center cursor-default ">
         <SectionHeading>My Recent Projects</SectionHeading>
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 200 }}
+          initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 1.5 }}
-          className="after:block dark:after:bg-zinc-500  after:opacity-70 after:bg-slate-300 md:after:w-80 w-60 after:h-[2px] after:mt-auto ml-6"
+          className="after:block dark:after:bg-zinc-700  after:opacity-70 after:bg-slate-200 after:w-40 md:after:w-80 md:w-60 w-20 after:h-[2px] after:mt-auto ml-6"
         ></motion.div>
       </div>
       {projects.map((project, index) => (
