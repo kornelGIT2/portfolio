@@ -41,7 +41,7 @@ const MobileNav = () => {
       </SheetTrigger>
       <SheetContent
         side={"left"}
-        className="dark:bg-slate-950 border-r-2 z-[100] dark:border-zinc-800 bg-slate-100 border-slate-800"
+        className="dark:bg-slate-950  z-[100] dark:border-slate-950 bg-slate-200 "
       >
         <div className="p-3 h-full flex justify-between flex-col">
           <div>
@@ -65,7 +65,7 @@ const MobileNav = () => {
                 />
               </a>
             </div>
-            <hr className="border-b border-zinc-300 dark:border-zinc-700 mt-6"></hr>
+            <hr className="border-b border-slate-300 dark:border-slate-700 mt-10 opacity-70"></hr>
             <ul className="flex flex-col space-y-10 mt-10">
               {links.map((link) => {
                 return (
