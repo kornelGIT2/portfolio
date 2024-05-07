@@ -36,11 +36,7 @@ function Hero() {
             </span>{" "}
             <span className="font-bold text-black dark:text-white dark:opacity-90 opacity-80 text-2xl tracking-wide leading-[3.25rem]  md:leading-[3.75rem] lg:leading-[4.0625rem] xl:text-4xl xl:leading-[4.5rem]">
               <Typewriter
-                words={[
-                  "Dedicated & Passionate",
-                  "UI/UX Designer",
-                  "Focused on React (Next.js)",
-                ]}
+                words={["Dedicated & Passionate", "Focused on React (Next.js)"]}
                 loop={0}
                 cursor
                 cursorStyle="_"
