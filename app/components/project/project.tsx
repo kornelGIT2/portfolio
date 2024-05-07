@@ -5,7 +5,7 @@ type ProjectProps = {
   description: string;
   imageUrl: string;
   sourceCode: string;
-  techStack: { name: string; icon: string }[];
+  techStack: { name: string; icon: string | undefined }[];
   keyProp: number;
 };
 
@@ -41,7 +41,7 @@ function Project({
         />
 
         <ul className="flex flex-wrap items-center justify-center gap-2 md:mt-8 mt-2">
-          {techStack.map((tag: { name: string; icon: string }) => {
+          {techStack.map((tag: { name: string; icon: string | undefined }) => {
             return (
               <li
                 key={tag.name}
@@ -86,16 +86,26 @@ function Project({
                 className="dark:invert opacity-40 hover:opacity-50"
               />
             </a>
+          ) : title === "Real Estate" ? (
+            <a href="https://real-estate-app-sigma.vercel.app/">
+              <Image
+                src="/external_link.svg"
+                height={30}
+                width={30}
+                alt="github"
+                className="dark:invert opacity-40 hover:opacity-50"
+              />
+            </a>
           ) : null}
         </div>
       </div>
 
       <img
-        className="hidden lg:block lg:absolute top-5 group-odd:-right-10 h-full lg:max-w-[30rem]  w-full rounded-t-xl shadow-2xl
-          group-even:right-[initial] group-even:-left-0  object-cover -mt-4 
-          group-hover:scale-[1.1]
+        className="hidden lg:block lg:absolute top-4 group-odd:-right-40 h-full lg:max-w-[42rem]  w-full rounded-t-xl shadow-2xl
+          group-even:right-[initial] group-even:-left-28  object-cover -mt-4
+          group-hover:scale-[1.05]
           
-          group-hover:-translate-x-4
+          group-hover:-translate-x-2
           group-hover:translate-y-2
           group-hover:-rotate-2
           transition
@@ -108,7 +118,7 @@ function Project({
         alt="app image"
       />
 
-      {keyProp !== 2 && (
+      {keyProp !== 3 && (
         <hr className="border-b border-slate-200 dark:border-slate-700 opacity-70 w-full mt-6"></hr>
       )}
     </div>

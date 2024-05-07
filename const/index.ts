@@ -36,7 +36,7 @@ export const projects = [
   {
     title: "Car Rental",
     description:
-      "I have developed and deployed a custom car rental template from scratch, allowing users to browse available vehicles and make reservations.",
+      "I have developed and deployed a fully responsive custom car rental template from scratch, allowing users to browse available vehicles and make reservations.",
     sourceCode: "https://github.com/kornelGIT2/car-rental",
     techStack: [
       skills[1],
@@ -50,7 +50,7 @@ export const projects = [
   {
     title: "SaaS AI Platform",
     description:
-      "I have built and deployed cloud-based platform using Cloudinary technologies to provide a range of services and capabilities in terms of image processing and enhancement.",
+      "I have built cloud-based platform using Cloudinary technologies to provide a range of services and capabilities in terms of image processing and enhancement.",
     sourceCode: "https://github.com/kornelGIT2/aIograph",
     techStack: [
       skills[1],
@@ -63,6 +63,20 @@ export const projects = [
     ],
     imageUrl: "aiograph_light.png",
   },
+  {
+    title: "Real Estate",
+    description:
+      "I have created and deployed real estate application, where you can explore properties. It provides filtering options and intuitive interface that integrates an interactive map feature.",
+    sourceCode: "https://github.com/kornelGIT2/real-estate",
+    techStack: [
+      skills[1],
+      skills[2],
+      { name: "Vite", icon: undefined },
+      skills[6],
+    ],
+    imageUrl: "realestate1.png",
+  },
+
   {
     title: "Finance Tracker",
     description:

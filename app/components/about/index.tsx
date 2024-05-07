@@ -100,7 +100,7 @@ function AboutMe() {
                 })}
               </div>
             ) : (
-              <div className="lg:absolute lg:top-10 flex flex-col gap-4 justify-start md:items-start">
+              <div className="lg:absolute lg:top-10 flex flex-col gap-4 justify-start lg:items-start">
                 <p>Nicolaus Copernicus University </p>
                 <p>Bachelor of Science in Computer Science</p>
               </div>
