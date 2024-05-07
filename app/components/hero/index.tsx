@@ -38,7 +38,6 @@ function Hero() {
               <Typewriter
                 words={[
                   "Dedicated & Passionate",
-                  "Frontend Developer",
                   "UI/UX Designer",
                   "Focused on React (Next.js)",
                 ]}
