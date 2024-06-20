@@ -67,7 +67,7 @@ export const projects = [
     title: "Real Estate",
     description:
       "I have created and deployed real estate application, where you can explore properties. It provides filtering options and intuitive interface that integrates an interactive map feature.",
-    sourceCode: "https://github.com/kornelGIT2/real-estate",
+    sourceCode: "https://github.com/kornelGIT2/real-estate-app",
     techStack: [
       skills[1],
       skills[2],
